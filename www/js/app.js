@@ -22,13 +22,16 @@
 
         // Events
         $(document).off('click', '#btn-create').on('click', '#btn-create', function (e) {
-            waitingDialog.show();
-            ws.send("create");
+            waitingDialog.show('Loading', {onShow: function () {
+                ws.send("create");
+            }});
+
         });
 
         $(document).off('click', '#btn-progress').on('click', '#btn-progress', function (e) {
-            waitingDialog.show();
-            ws.send("progress");
+            waitingDialog.show('Loading', {onShow: function () {
+                ws.send("progress");
+            }});
         });
 
         // VueJS

@@ -36,8 +36,10 @@ class HorseQueries
         $result = $this->database->executeQuery($sql);
         $obj = $result->fetch_object();
         $horse = $this->container->make(Horse::class);
-        foreach ($obj as $property => $value) {
-            $horse->$property = $value;
+        if ($obj) {
+            foreach ($obj as $property => $value) {
+                $horse->$property = $value;
+            }
         }
         return $horse;
     }

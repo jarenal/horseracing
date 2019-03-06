@@ -23,13 +23,15 @@ into your database.
 
 ## Config file
 
-Before to run the project you need to update the config file with your settings.
+Before to run the project you need to create the config file and update it with your settings.
 
-Please edit the next file and add your database settings.
+Please copy the default config file:
 
 ```textmate
-config/config.yaml
+cp config/config.default.yaml config/config.yaml
 ```
+
+and then update the new one with your database settings.
 
 
 ## Start Websocket daemon
