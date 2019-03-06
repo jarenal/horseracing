@@ -1,0 +1,30 @@
+{
+    "name": "jarenal/horseracing",
+    "description": "Horse Racing is a game for testing purposes using websockets and PHP.",
+    "type": "project",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Jose Antonio",
+            "email": "jguidos@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php-di/php-di": "^6.0",
+        "doctrine/annotations": "^1.6",
+        "symfony/yaml": "^4.2",
+        "cboden/ratchet": "^0.4.1",
+        "symfony/serializer": "^4.2",
+        "symfony/property-access": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {"Jarenal\\": "src/Jarenal/"}
+    },
+    "scripts": {
+      "phpcs": "phpcs --standard=PSR2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.4.0"
+    }
+}

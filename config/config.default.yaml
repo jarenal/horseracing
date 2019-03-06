@@ -1,0 +1,15 @@
+game:
+  tick_time: 10
+  total_distance: 1500
+database:
+  host: "localhost"
+  username: ""
+  password: ""
+  name: "horseracing"
+  port: "3306"
+routes:
+  home:
+    controller: Jarenal\App\Controller\Home
+    action: "index"
+    method: "GET"
+    pattern: "/"
